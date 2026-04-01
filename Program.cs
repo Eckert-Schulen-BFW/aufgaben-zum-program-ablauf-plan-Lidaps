@@ -36,59 +36,62 @@ using System;
 System.Console.WriteLine("Bitte Namen eingeben!");
 //Eingabe Name
 string? strname = Console.ReadLine();
-strname = strname!= null ? strname : "Falsche Eingabe";
+strname = strname != null ? strname : "Falsche Eingabe";
 //Ausgabe
 System.Console.WriteLine("Bitte Gewicht in kg eingeben!");
 double doubleWeight = -1;
 string? strWeight = Console.ReadLine();
-bool boolWeight = double.TryParse(strWeight,out doubleWeight); 
-if (boolWeight = !true)
+bool boolWeight = double.TryParse(strWeight, out doubleWeight);
+if (boolWeight == !true)
 {
     Console.WriteLine("Fehler Ungültige \n Eingabe");
-    
-};
+
+}
+;
 
 Console.WriteLine("Bitte Größe in meter eingeben!");
 double dblGroese = -1;
 string? strGroese = Console.ReadLine();
-bool blGroese = double.TryParse(strGroese,out dblGroese);
-if (blGroese = false)
+bool blGroese = double.TryParse(strGroese, out dblGroese);
+if (blGroese == false)
 {
     Console.WriteLine("Fehler Ungültige \n Eingabe");
-    
-};
+
+}
+;
 
 
 if (dblGroese < 0)
 {
     System.Console.WriteLine("Fehler \nGröße muss psitiv sein");
 
-    
+
 }
 // Berechnung BMI = Gewicht / (Größe x Größe)
 
 double dbBmi = -1;
 
 dbBmi = doubleWeight / (dblGroese * dblGroese);
-string kat ="";
+string kat = "";
 if (dbBmi < 18.5)
 {
-   kat ="Untergewicht";
+    kat = "Untergewicht";
 }
 else if (dbBmi < 25)
 {
-    kat ="Normalgewicht";
+    kat = "Normalgewicht";
 }
 else if (dbBmi < 30)
 {
-    kat ="Übergewicht";
+    kat = "Übergewicht";
 }
 else
 {
-    kat ="Starkes Übergewicht";
+    kat = "Starkes Übergewicht";
 }
 
 
+Console.WriteLine($"Der BMI von {strname} ist {kat}  ");
 
 
 
