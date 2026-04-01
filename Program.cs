@@ -24,7 +24,7 @@
 // TODO: Schreibe dein Programm unterhalb dieser Zeile.
 //       Orientiere dich dabei am PAP in der README.md.
 //       Jeder Schritt im PAP sollte einer Zeile / einem Block in deinem Code entsprechen.
-
+System.Console.WriteLine("test");
 // ── Schritt 1: Programmtitel ausgeben ───────────────────────
 // Tipp: Nutze Console.WriteLine() für die Titelbox.
 // TODO: Ausgabe der Titelzeile (wie im Beispiel in der README)
