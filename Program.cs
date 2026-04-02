@@ -91,7 +91,7 @@ else
 }
 
 
-Console.WriteLine($"Der BMI von {strname} ist {kat}  ");
+Console.WriteLine($"Der BMI von {strname} ist {kat}  und at den Wert {dbBmi:F2}");
 
 
 
