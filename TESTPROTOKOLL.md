@@ -90,7 +90,7 @@ Führe alle Testfälle aus und notiere die tatsächliche Ausgabe deines Programm
 ## 💭 Reflexionsfragen (Aufgabe 4)
 
 ### Frage 1
-> Was passiert, wenn jemand `1,75` statt `1.75` als Größe eingibt? Teste es! Wie könnte man das Problem lösen?
+> Was passiert, wenn jemand `1,75` statt `1.75` als Größe eingibt? Teste es! Wie könnte man das Problem lösen? IF Eingabe = (Eingabe < 1.30 && Eingabe > 2.30 ){Console.Write.Line("Bitte Punkt als Trennzeichen verwenen")}
 
 **Beobachtung beim Test:**  
 *(hier einfügen)*
