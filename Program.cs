@@ -72,26 +72,26 @@ if (dblGroese < 0)
 double dbBmi = -1;
 
 dbBmi = doubleWeight / (dblGroese * dblGroese);
-string kat = "";
+string? kategorie = "";
 if (dbBmi < 18.5)
 {
-    kat = "Untergewicht";
+    kategorie = "Untergewicht";
 }
 else if (dbBmi < 25)
 {
-    kat = "Normalgewicht";
+    kategorie = "Normalgewicht";
 }
 else if (dbBmi < 30)
 {
-    kat = "Übergewicht";
+    kategorie = "Übergewicht";
 }
 else
 {
-    kat = "Starkes Übergewicht";
+    kategorie = "Starkes Übergewicht";
 }
 
 
-Console.WriteLine($"Der BMI von {strname} ist {kat}  und at den Wert {dbBmi:F2}");
+Console.WriteLine($"Der BMI von {strname} ist {kategorie}  und at den Wert {dbBmi:F2}");
 
 
 
